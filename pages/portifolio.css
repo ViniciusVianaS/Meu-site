@@ -1,0 +1,125 @@
+* {
+    font-family: sans-serif;
+    
+}
+
+body {
+    background-image: url("/images/bg.jpeg");
+    background-repeat: repeat;
+    background-position: center center;
+    background-position: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.centered-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered-ul li {
+    display: flex;
+    align-items: center;
+    background-color: #061d3e;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.me {
+    background-image: url("/images/bg.jpeg");
+    background-position: center;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.perfil {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+.image {
+    font-weight: bold;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.link:hover a {opacity: 0.25;}
+.link a:hover {opacity: 1;}
+
+.voltar {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.links:hover a {opacity: 0.25;}
+.links a:hover {opacity: 1;}
+
+.dividir {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.text {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.text h3 {
+    margin-top: 0;
+}
+
+.text p {
+    margin-bottom: 0;
+}
+
+.additional-content h1 {
+    margin-left: 130px;
+}
+
+.title {
+    background-image: url("/images/bg.jpeg");
+    background-position: right;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container {
+    display: flex;
+}
+
+.coluna {
+    flex: 1;
+    padding: 0 10px;
+}

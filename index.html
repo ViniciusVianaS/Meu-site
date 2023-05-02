@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>My Site</title>
+  </head>
+  <body>
+    <button class="burger" onclick="toggleMenu()">Menu</button>
+    <div class="menu">
+      <nav>
+        <a href="index.html" style="animation-delay: 0.2s">Home</a>
+        <a href="/pages/portifolio.html" style="animation-delay: 0.3s">Portifolio</a>
+        <a href="/pages/skills.html" style="animation-delay: 0.4s;">Skills</a>
+      </nav>
+    </div>
+    <main class="container">
+      <ul class="center">
+        <li>
+          <h1 class="name">Sobre mim:</h1>
+          <h1>Olá eu sou o Vinicius</h1>
+          <h2>tenho 19 anos<br> e estou cursando o 3º semestre
+            de analise e desenvolvimento de sistemas.<br>
+            Estou focado em aprender o desenvolvimento Front-End,<br>
+            tenho experiência com HTML, CSS, Javascript e Git.<br>
+            Agora estou me especializando em React e futuramente planejo aprender React-Native,<br>
+            já realizei projetos pessoais com React envolvendo API`s,<br>
+            Também tenho experiência com banco de dados SQL e NOSQL.<br>
+            Estou agora na busca de vagas para estágio,<br>
+            para que eu possa evoluir como pessoa e como desenvolvedor.<br>
+            Para ver meu portifolio, meus projetos, github e linkedin:<br>
+            <br>
+            Clique em <b>MENU.</b>
+          </h2>
+        </li>
+      </ul>
+    </main>
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+</html>
