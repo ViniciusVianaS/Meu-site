@@ -6,8 +6,10 @@
 body {
     color: #f9f9f9;
     background-image: url("/images/bg.jpeg");
-    background-repeat: no-repeat;
-    background-position: 0% 10%;
+    background-repeat: repeat;
+    background-position: center center;
+    background-position: fixed;
+    background-size: cover;
 }
   
 button {
