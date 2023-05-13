@@ -6,8 +6,11 @@
 body {
     color: #fff;
     background-image: url("/images/bg.jpeg");
-    background-repeat: no-repeat;
-    background-position: 0% 10%;
+    background-repeat: repeat;
+    background-position: center center;
+    background-position: fixed;
+    background-size: cover;
+    height: 90vh;
 }
 
 .voltar {
