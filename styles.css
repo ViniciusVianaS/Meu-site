@@ -96,7 +96,6 @@ section:nth-child(4) {
 .perfil {
     width: 200px;
     height: 200px;
-    margin-right: 20px;
     border-radius: 100px;
 }
 
@@ -120,7 +119,7 @@ section:nth-child(4) {
 
 .redes:hover {
   font-size: 17px;
-  
+  opacity: 0.7;
 }
 
 @media (max-width: 768px) {
