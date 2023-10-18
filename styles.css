@@ -93,20 +93,14 @@ section:nth-child(4) {
     opacity: 1;
 }
 
+.content {
+  margin-top: 80px;
+}
+
 .perfil {
     width: 200px;
     height: 200px;
     border-radius: 100px;
-}
-
-.title {
-    background-image: url("/images/back.jpeg");
-    background-position: left;
-    background-repeat: repeat;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 25px;
 }
 
 .redes {
