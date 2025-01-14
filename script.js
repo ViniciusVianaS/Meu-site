@@ -1,26 +1,12 @@
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
+const themeToggleButton = document.getElementById('theme-toggle');
+const body = document.body;
 
-const resetLinks = () => {
-  navLinks.forEach((link) => link.classList.remove("active"));
-};
+themeToggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
 
-const handleScroll = () => {
-  const { pageYOffset } = window;
-
-  sections.forEach((section) => {
-    const { id, offsetTop, clientHeight } = section;
-    const offset = offsetTop - 1;
-
-    if (pageYOffset >= offset && pageYOffset < offset + clientHeight) {
-      resetLinks();
-      navLinks.forEach((link) => {
-        if (link.dataset.scroll === id) {
-          link.classList.add("active");
-        }
-      });
+    if (body.classList.contains('dark-mode')) {
+        themeToggleButton.textContent = '☀️ Modo Claro';
+    } else {
+        themeToggleButton.textContent = '🌙 Modo Escuro';
     }
-  });
-};
-
-document.addEventListener("scroll", handleScroll);
+});

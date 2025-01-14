@@ -1,125 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #000000;
+  --bg-color-dark: #1a1a1a;
+  --text-color-dark: #ffffff;
 }
 
 body {
   margin: 0;
-  background: #2a282d;
-  color: #222;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
+body.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+.header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 16px;
-  padding: 0 20px;
-  width: 100%;
-  height: 72px;
-  background: #ffffff;
-  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+  padding: 1rem 2rem;
+  background-color: var(--bg-color-light);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
 }
 
-nav a {
-  color: inherit;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 16px;
-  font-weight: 600;
+.header.dark-mode {
+  background-color: var(--bg-color-dark);
 }
 
-nav span {
-  margin-right: 10px;
+.logo {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: bold;
 }
 
-nav a.active {
-  color: #2b6bf4;
-  font-size: 20px;
+.theme-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--text-color-light);
+  color: var(--bg-color-light);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 0 15%;
-  text-align: center;
+body.dark-mode .theme-button {
+  background-color: var(--text-color-dark);
+  color: var(--bg-color-dark);
 }
 
-section:nth-child(2) {
-  background: #cfd0e3;
-}
-
-section:nth-child(3) {
-  background: #fff;
-}
-
-section:nth-child(4) {
-  background: #cfd0e3;
-  color: #000;
-}
-
-.dividir {
-    height: 2px;
-    width: 100%;
-    background-color: #000;
-}
-
-.links a {
-    text-decoration: none;
-    color: #636363;
-    padding: 10px;
-    font-weight: bold;
-}
-
-.links:hover a {
-    opacity: 0.25;
-    color: #000;
-    transition: .3s;
-}
-.links a:hover {
-    opacity: 1;
-}
-
-.perfil {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-}
-
-.redes {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    padding: 10px;
-    transition: color .5s ease;
-}
-
-.redes:hover {
-  font-size: 17px;
-  opacity: 0.7;
-}
-
-@media (max-width: 768px) {
-  .content {
-    font-size: 14px;
-    margin-top: 25px;
-  }
-  .perfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    margin-top: 50px;
-}
+.content {
+  padding: 10px;
 }
