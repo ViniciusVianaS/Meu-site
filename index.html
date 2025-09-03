@@ -1,86 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Vinicius Dev</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vinicius Viana — Desenvolvedor Jr</title>
+    <meta
+      name="description"
+      content="Portfolio de Vinicius Viana — Desenvolvedor Júnior."
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="logo">Vinicius Dev</h1>
-      <button id="theme-toggle" class="theme-button">☀</button>
-    </header>
-    <main class="content">
-      <div class="container">
-        <section class="sections">
-          <img
-            src="./images/perfil-img.jfif"
-            alt="foto de perfil"
-            class="perfil"
-          />
-          <div class="align" style="display: flex; justify-content: center">
-            <h1 style="margin-top: 5px">Dev Full Stack</h1>
-            <a
-              href="https://github.com/ViniciusVianaS"
-              style="margin-left: 20px; background-color: #fff; border-radius: 50px;"
-            >
-              <img
-                alt="Vini-Github"
-                height="40"
-                width="40"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/vinicius-viana-672006240" style="margin-left: 10px;">
-              <img
-                alt="Vini-Js"
-                height="40"
-                width="40"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-              />
-            </a>
-          </div>
-        </section>
-        <section class="sections">
-          <h2 class="about-me">
-            Olá eu sou o Vinicius tenho 20 anos sou formado em análise e
-            desenvolvimento de sistemas. Estou focado em aprender o
-            desenvolvimento Full Stack, tenho experiência com HTML, CSS,
-            Tailwind, Javascript, React, Next, PHP, Laravel, e Git. Atualmente
-            trabalho como desenvolvedor Back-End.
-          </h2>
-        </section>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="#">
+          <span class="logo">VV</span>
+          <h1>Vinicius Viana · Dev Jr</h1>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+          </ul>
+        </nav>
       </div>
-      <section class="experience">
-        <h2>Experiência Profissional</h2>
-        <div class="job">Desenvolvedor Back-End</div>
-        <div class="job">Desenvolvedor Front-End</div>
-      </section>
-      <section class="projects">
-        <h2>Projetos</h2>
-        <div class="carousel-container">
-          <button class="prev-btn">&lt;</button>
-          <div class="carousel">
-            <div class="carousel-item">
-              <img src="images/spotify.png" class="images" alt="spotify" />
-              <p>Interface do Spotify</p>
-              <p>Projeto feito com Typescript e Tailwind.</p>
-            </div>
-            <div class="carousel-item">
-              <img src="images/devhouse.png" class="images" alt="devhouse" />
-              <p>DevHouse</p>
-              <p>Projeto fullstack feito com PHP, Blade, Tailwind e Mysql.</p>
-            </div>
-            <div class="carousel-item">Item 3</div>
-            <div class="carousel-item">Item 4</div>
-            <div class="carousel-item">Item 5</div>
+    </header>
+
+    <main id="conteudo" class="container">
+      <section class="hero">
+        <div>
+          <p class="tag">
+            Disponível para oportunidades · Fortaleza/Eusebio-BR · Remoto
+          </p>
+          <h2>
+            Crio soluções
+            <span class="gradient">rápidas, modernas e acessíveis</span> que
+            resolvem problemas reais.
+          </h2>
+          <p class="lead">
+            Desenvolvedor Fullstack Júnior com foco em Frontend
+            JavaScript/TypeScript (React, Next.js, Vue) e back-end em
+            PHP/Laravel.
+          </p>
+          <div class="tags">
+            <span class="tag">React |</span>
+            <span class="tag">Next.js |</span>
+            <span class="tag">Vue |</span>
+            <span class="tag">TypeScript |</span>
+            <span class="tag">Tailwind |</span>
+            <span class="tag">PHP |</span>
+            <span class="tag">Laravel |</span>
+            <span class="tag">Mysql</span>
           </div>
-          <button class="next-btn">&gt;</button>
+          <div class="socials">
+            <a href="#">Github: </a>
+          </div>
+          <div class="clicks">
+            <a class="btn primary" href="#projetos">Ver projetos</a>
+            <a class="btn" href="mailto:vinicius@email.com"
+              >Baixar currículo (PDF)</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="sobre">
+        <h3>Sobre mim</h3>
+        <p>
+          Olá eu sou o Vinícius, tenho 21 anos, sou formado em análise e
+          desenvolvimento de sistemas. Sou Desenvolvedor Fullstack, tenho
+          experiência com HTML, CSS, Tailwind, Javascript, React, Vue, Next, PHP
+          e Laravel.
+        </p>
+      </section>
+      <section id="skills">
+        <h3>Habilidades</h3>
+        <div class="grid skills">
+          <div class="skill-card">
+            <b>Frontend</b>
+            <div class="badges">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">Tailwind</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">React</span>
+              <span class="badge">Vue</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <b>Backend</b>
+            <div class="badges">
+              <span class="badge">PHP</span>
+              <span class="badge">Laravel</span>
+              <span class="badge">Python</span>
+              <span class="badge">Node.js</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projetos">
+        <h3>Experiência Profissional</h3>
+        <div class="grid projects">
+          <article class="project">
+            <div class="thumb">Jornal O Povo</div>
+            <div class="p-body">
+              <h4>
+                Desenvolvedor Fullstack - Aprendiz | Jornal O Povo - Hibrido |
+                Mai de 2024 - Mai de 2025
+              </h4>
+              <p>
+                <b>Tarefas:</b> Atuei como desenvolvedor Full Stack, fazendo
+                alterações, implementações e atualizações nos sistemas internos,
+                trabalhando nos sistemas financeiros onde tive a oportunidade de
+                trabalhar com dados. E também desenvolvi novas funcionalidades
+                dos sistemas internos da empresa.
+              </p>
+              <p>
+                <b>Competências:</b> Trabalho em equipe, resolução de tarefas,
+                Comunicação e colaboração, Desenvolvimento Full Stack, Banco de
+                dados, Versionamento de código, Javascript, Vue, Tailwind,
+                Laravel, git, gitlab, mysql.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="grid projects" style="margin-top: 1rem;">
+          <article class="project">
+            <div class="thumb">Jornal O Povo</div>
+            <div class="p-body">
+              <h4>
+                Desenvolvedor Front-End | InkPen Startup - Remoto | Dez de 2023
+                - até Abr de 2024.
+              </h4>
+              <p>
+                <b>Tarefas:</b> Atuei como desenvolvedor Front-End, resolvendo
+                tarefas, atualizando e desenvolvendo novas implementações no
+                sistema principal da empresa.
+              </p>
+              <p>
+                <b>Competências:</b> Javascript, React, Tailwind, trabalho em
+                equipe, resolução de tarefas, Comunicação e colaboração.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="container">
+        <small>© <span id="ano"></span> Vinicius Viana.</small>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
