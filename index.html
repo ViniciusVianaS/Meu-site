@@ -1,158 +1,226 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vinicius Viana — Desenvolvedor Jr</title>
+    <title>Vinícius Viana — Portfólio</title>
     <meta
       name="description"
-      content="Portfolio de Vinicius Viana — Desenvolvedor Júnior."
+      content="Portfólio profissional — Desenvolvedor Front-end / Fullstack"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="container nav">
-        <a class="brand" href="#">
-          <span class="logo">VV</span>
-          <h1>Vinicius Viana · Dev Jr</h1>
-        </a>
-        <nav>
-          <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#experiencia">Experiência</a></li>
-          </ul>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">Vinícius <span class="dot">.</span></a>
+        <nav class="nav" id="nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato" class="btn-outline">Contato</a>
         </nav>
+        <button id="menuToggle" class="menu-btn" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
-    <main id="conteudo" class="container">
-      <section class="hero">
-        <div>
-          <p class="tag">
-            Disponível para oportunidades · Fortaleza/Eusebio-BR · Remoto
-          </p>
-          <h2>
-            Crio soluções
-            <span class="gradient">rápidas, modernas e acessíveis</span> que
-            resolvem problemas reais.
-          </h2>
-          <p class="lead">
-            Desenvolvedor Fullstack Júnior com foco em Frontend
-            JavaScript/TypeScript (React, Next.js, Vue) e back-end em
-            PHP/Laravel.
-          </p>
-          <div class="tags">
-            <span class="tag">React |</span>
-            <span class="tag">Next.js |</span>
-            <span class="tag">Vue |</span>
-            <span class="tag">TypeScript |</span>
-            <span class="tag">Tailwind |</span>
-            <span class="tag">PHP |</span>
-            <span class="tag">Laravel |</span>
-            <span class="tag">Mysql</span>
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1>Olá, eu sou <strong>Vinícius</strong></h1>
+            <p class="lead">
+              Desenvolvedor web formado em analise e desenvolvimento de sistemas — faço interfaces responsivas,
+              acessíveis e com atenção a performance. Busco vagas como
+              desenvolvedor júnior.
+            </p>
+            <div class="hero-ctas">
+              <a href="#projetos" class="btn-primary">Ver projetos</a>
+              <a href="#contato" class="btn-ghost">Me contratar</a>
+            </div>
+            <ul class="meta">
+              <li>📍 Fortaleza, Brasil</li>
+              <li>💼 Disponível para entrevistas</li>
+            </ul>
           </div>
-          <div class="socials">
-            <a href="#">Github: </a>
+          <div class="hero-card">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+              alt="Exemplo de projeto"
+            />
           </div>
-          <div class="clicks">
-            <a class="btn primary" href="#projetos">Ver projetos</a>
-            <a class="btn" href="mailto:vinicius@email.com"
-              >Baixar currículo (PDF)</a
+        </div>
+      </section>
+
+      <section class="about container" id="sobre">
+        <h2>Sobre mim</h2>
+        <div class="about-grid">
+          <p>
+            Olá eu sou o Vinicius tenho 20 anos e sou formado em análise e
+            desenvolvimento de sistemas. Sou desenvolvedor fullstack, com
+            experiência profissional e pessoal com projetos e certificados de
+            ensino. Atualmente estou focado em aprimorar minhas habilidades e
+            todos os dias evoluir de acordo com os desafios do mercado.
+          </p>
+
+          <div class="facts">
+            <div>
+              <strong>Formação: </strong
+              ><span>Analise e Desenvolvimento de Sistemas.</span>
+            </div>
+            <div>
+              <strong>Idiomas: </strong
+              ><span>Português (nativo) — Inglês Intermediario.</span>
+            </div>
+            <div>
+              <strong>Interesses: </strong><span>Fullstack, frontend.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills container" id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-card">HTML &amp; CSS</div>
+          <div class="skill-card">JavaScript / TypeScript</div>
+          <div class="skill-card">Tailwind &amp; Vue</div>
+          <div class="skill-card">React / Next.js</div>
+          <div class="skill-card">PHP &amp; Laravel</div>
+          <div class="skill-card">Python &amp; Dados</div>
+          <div class="skill-card">Postgres / MySQL</div>
+          <div class="skill-card">Git &amp; GitHub / Gitlab</div>
+          <div class="skill-card">Design Patterns &amp; MVC</div>
+        </div>
+      </section>
+
+      <section class="projects container" id="projetos">
+        <h2>Projetos</h2>
+        <p class="section-sub">
+          Alguns trabalhos selecionados — clique para ver mais detalhes.
+        </p>
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <article class="project-card" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+              alt="Projeto 1"
+            />
+            <div class="project-body">
+              <h3>Sistema de Posts (Next.js)</h3>
+              <p>
+                Monolito para gerenciamento de posts com autenticação e controle
+                de papéis (Admin, Escritor, Leitor).
+              </p>
+              <div class="project-actions">
+                <a href="#" class="link">Ver repositório</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="project-card" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+              alt="Projeto 2"
+            />
+            <div class="project-body">
+              <h3>App de Agendamento</h3>
+              <p>
+                Projeto em Laravel que simula um sistema de atendimento para
+                petshop, com recursos de agendamento e papéis distintos.
+              </p>
+              <div class="project-actions">
+                <a href="#" class="link">Ver repositório</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 3 -->
+          <article class="project-card" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1523475496153-3d6cc9ab0af9?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+              alt="Projeto 3"
+            />
+            <div class="project-body">
+              <h3>Projeto com APIs</h3>
+              <p>
+                Backend em Node/Express e integração com MySQL para processos de
+                CRUD e autenticação.
+              </p>
+              <div class="project-actions">
+                <a href="#" class="link">Ver repositório</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact container" id="contato">
+        <h2>Contato</h2>
+        <p>Quer me chamar para uma vaga ou entrevista? Envie uma mensagem.</p>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-grid">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Seu nome"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Seu e‑mail"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Assunto"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Mensagem"
+              required
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Enviar mensagem</button>
+            <small class="form-note"
+              >Ou envie um e‑mail diretamente para
+              <a href="mailto:seu@email.com"
+                >viniciusviana054@gmail.com</a
+              ></small
             >
           </div>
-        </div>
-      </section>
-      <section id="sobre">
-        <h3>Sobre mim</h3>
-        <p>
-          Olá eu sou o Vinícius, tenho 21 anos, sou formado em análise e
-          desenvolvimento de sistemas. Sou Desenvolvedor Fullstack, tenho
-          experiência com HTML, CSS, Tailwind, Javascript, React, Vue, Next, PHP
-          e Laravel.
-        </p>
-      </section>
-      <section id="skills">
-        <h3>Habilidades</h3>
-        <div class="grid skills">
-          <div class="skill-card">
-            <b>Frontend</b>
-            <div class="badges">
-              <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
-              <span class="badge">Tailwind</span>
-              <span class="badge">JavaScript</span>
-              <span class="badge">TypeScript</span>
-              <span class="badge">React</span>
-              <span class="badge">Vue</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <b>Backend</b>
-            <div class="badges">
-              <span class="badge">PHP</span>
-              <span class="badge">Laravel</span>
-              <span class="badge">Python</span>
-              <span class="badge">Node.js</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projetos">
-        <h3>Experiência Profissional</h3>
-        <div class="grid projects">
-          <article class="project">
-            <div class="thumb">Jornal O Povo</div>
-            <div class="p-body">
-              <h4>
-                Desenvolvedor Fullstack - Aprendiz | Jornal O Povo - Hibrido |
-                Mai de 2024 - Mai de 2025
-              </h4>
-              <p>
-                <b>Tarefas:</b> Atuei como desenvolvedor Full Stack, fazendo
-                alterações, implementações e atualizações nos sistemas internos,
-                trabalhando nos sistemas financeiros onde tive a oportunidade de
-                trabalhar com dados. E também desenvolvi novas funcionalidades
-                dos sistemas internos da empresa.
-              </p>
-              <p>
-                <b>Competências:</b> Trabalho em equipe, resolução de tarefas,
-                Comunicação e colaboração, Desenvolvimento Full Stack, Banco de
-                dados, Versionamento de código, Javascript, Vue, Tailwind,
-                Laravel, git, gitlab, mysql.
-              </p>
-            </div>
-          </article>
-        </div>
-        <div class="grid projects" style="margin-top: 1rem;">
-          <article class="project">
-            <div class="thumb">Jornal O Povo</div>
-            <div class="p-body">
-              <h4>
-                Desenvolvedor Front-End | InkPen Startup - Remoto | Dez de 2023
-                - até Abr de 2024.
-              </h4>
-              <p>
-                <b>Tarefas:</b> Atuei como desenvolvedor Front-End, resolvendo
-                tarefas, atualizando e desenvolvendo novas implementações no
-                sistema principal da empresa.
-              </p>
-              <p>
-                <b>Competências:</b> Javascript, React, Tailwind, trabalho em
-                equipe, resolução de tarefas, Comunicação e colaboração.
-              </p>
-            </div>
-          </article>
-        </div>
+        </form>
       </section>
     </main>
-    <footer>
-      <div class="container">
-        <small>© <span id="ano"></span> Vinicius Viana.</small>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Vinícius Viana — Desenvolvedor</p>
+        <div class="socials">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </div>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
