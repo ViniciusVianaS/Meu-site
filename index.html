@@ -1,106 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Vinicius Dev</title>
-</head>
-<body>
-    <nav id="navbar" class="navbar">
-        <a data-scroll="home" href="#home" class="active"> Sobre mim </a>
-        <a data-scroll="about" href="#about"> Portifolio </a>
-        <a data-scroll="work" href="#work"> Skills </a>
-    </nav>
-      <section id="home" class="section">
-        <div class="container">
-          <div class="content-wrapper text-center">
-            <div class="content">
-              <img src="./images/perfil2.jpg" class="perfil"><br>
-              <h1>Dev Full Stack</h1>
-              <h2>Olá eu sou o Vinicius tenho 20 anos
-                e sou formado em análise e desenvolvimento de sistemas.
-                Estou focado em aprender o desenvolvimento Full Stack,
-                tenho experiência com HTML, CSS, Tailwind, Javascript, React, Next, PHP, Laravel, e com Git.
-                Atualmente trabalho como desenvolvedor Back-End.</h2>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vinícius Viana — Portfólio</title>
+    <meta
+      name="description"
+      content="Portfólio profissional — Desenvolvedor Front-end / Fullstack"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">Vinícius <span class="dot">.</span></a>
+        <nav class="nav" id="nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato" class="btn-outline">Contato</a>
+        </nav>
+        <button id="menuToggle" class="menu-btn" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1>Olá, eu sou <strong>Vinícius</strong></h1>
+            <p class="lead" style="text-align: justify">
+              Desenvolvedor Web Full Stack, com 2 anos de experiência em
+              sistemas corporativos e 4 anos dedicados a área, APIs REST,
+              integrações, bancos de dados e desenvolvimento front-end e
+              back-end utilizando PHP, Laravel, JavaScript, TypeScript, React,
+              Vue, Next.js, Tailwind. Experiência comprovada em manutenção,
+              novas implementações e melhorias contínuas.
+            </p>
+            <div class="hero-ctas">
+              <a href="#projetos" class="btn-primary">Ver projetos</a>
+              <a href="#contato" class="btn-ghost">Me contratar</a>
+            </div>
+            <ul class="meta">
+              <li>📍 Fortaleza, Brasil</li>
+              <li>💼 Disponível para entrevistas</li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+              alt="Exemplo de projeto"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="about container" id="sobre">
+        <h2>Sobre mim</h2>
+        <div class="about-grid">
+          <p style="text-align: justify">
+            Desenvolvedor Full Stack com experiência em Javascript, PHP,
+            Laravel, Vue, React, Next.js, Tailwind. Gosto de transformar ideias
+            em aplicações funcionais, sempre priorizando boas práticas,
+            performance e uma experiência de usuário fluida. Estou em constante
+            aprendizado e busco oportunidades para evoluir como desenvolvedor,
+            contribuir com equipes e participar de projetos impactantes.
+          </p>
+
+          <div class="facts">
+            <div>
+              <strong>Formação: </strong
+              ><span>Analise e Desenvolvimento de Sistemas.</span>
+            </div>
+            <div>
+              <strong>Idiomas: </strong
+              ><span>Português (nativo) — Inglês Intermediario.</span>
+            </div>
+            <div>
+              <strong>Interesses: </strong><span>Fullstack, frontend.</span>
             </div>
           </div>
         </div>
       </section>
-      <section id="about" class="section">
-        <div class="container">
-          <div class="content-wrapper text-center">
-            <div class="content">
-              <h1>Dev Full Stack</h1>
-              <br>
-              <a href="https://github.com/ViniciusVianaS">
-                <img align="center" alt="Vini-Git" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /><a class="redes" href="https://github.com/ViniciusVianaS">Github</a>
-              </a>
-              <a href="https://www.linkedin.com/in/vinicius-viana-672006240">
-                <img align="center" alt="Vini-Js" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /><a class="redes" href="https://www.linkedin.com/in/vinicius-viana-672006240">Linkedin</a>
-              </a>
-              <br>
-              <h2>Tecnologias de desenvolvimento Front-End:</h2>
-              <img align="center" alt="Vini-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-              <img align="center" alt="Vini-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-              <img align="center" alt="Vini-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-              <img align="center" alt="Vini-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-              <img align="center" alt="Vini-Vue" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" />
-              <img align="center" alt="Vini-Tailwind" height="85" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain-wordmark.svg" />
-              <div class="dividir"></div>
-              <br>
-              <h2>Tecnologias de desenvolvimento Back-End:</h2>
-              <img align="center" alt="Vini-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-              <img align="center" alt="Vini-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-              <img align="center" alt="Vini-PHP" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-              <img align="center" alt="Vini-Laravel" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
-              <div class="dividir"></div>
-              <br>
-              <h2>Projetos:</h2><a href="https://github.com/ViniciusVianaS"><img align="center" alt="Vini-Github" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
-              <br>
-              <br>
-              <div class="links">
-                <a href="https://github.com/ViniciusVianaS/devHouse-fullstack">Dev House</a>
-                <a href="https://github.com/ViniciusVianaS/Spotify-interface">Spotify interface</a>
-                <a href="https://github.com/ViniciusVianaS/crud-php">Crud Php</a>
-                <a href="https://github.com/ViniciusVianaS/crud-next-firebase">Crud Next</a>
+
+      <section class="skills container" id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-card">HTML &amp; CSS</div>
+          <div class="skill-card">JavaScript / TypeScript</div>
+          <div class="skill-card">Tailwind &amp; Vue</div>
+          <div class="skill-card">React / Next.js</div>
+          <div class="skill-card">PHP &amp; Laravel</div>
+          <div class="skill-card">Python &amp; Dados</div>
+          <div class="skill-card">Postgres / MySQL</div>
+          <div class="skill-card">Git &amp; GitHub / Gitlab</div>
+          <div class="skill-card">Design Patterns &amp; MVC</div>
+        </div>
+      </section>
+
+      <section class="projects container" id="projetos">
+        <h2>Projetos</h2>
+        <p class="section-sub">
+          Alguns trabalhos selecionados — clique para ver mais detalhes.
+        </p>
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <article class="project-card" tabindex="0">
+            <img
+              src="https://private-user-images.githubusercontent.com/115045547/280480947-c67b5dd7-0215-4a78-9172-1b66e0146100.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjUzMDgxNzgsIm5iZiI6MTc2NTMwNzg3OCwicGF0aCI6Ii8xMTUwNDU1NDcvMjgwNDgwOTQ3LWM2N2I1ZGQ3LTAyMTUtNGE3OC05MTcyLTFiNjZlMDE0NjEwMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIwOVQxOTE3NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZWQxODAzMTBkZmJjYTY3ZDgzNDlmOGM1NGRiMWNhY2VjN2Q5Mjg3Y2ZlMzQ4MjE0NWI1Zjc2ODJiYjA2Njg4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.k2UCTvqCfPQuM1071aWTIdb0dgougIcQTgKbH1QR2sE"
+              alt="Projeto 1"
+            />
+            <div class="project-body">
+              <h3>Spotify Dev (Next.js)</h3>
+              <p>
+                Este projeto é uma recriação da interface do Spotify,
+                desenvolvida com Next.js, TypeScript e Tailwind CSS. Ele
+                demonstra como construir uma aplicação web moderna com uma stack
+                tecnológica popular...
+              </p>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ViniciusVianaS/Spotify-interface"
+                  class="link"
+                  >Ver repositório</a
+                >
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="work" class="section">
-        <div class="container">
-          <div class="content-wrapper text-center">
-            <div class="content">
-              <h2>Aprendizado:</h2>
-              <h3>- Formado em ADS</h3>
-              <h3>- Desenvolvimento Full Stack</h3>
-              <h3>- Experiência com banco de dados SQL</h3>
-              <br>
-              <div class="dividir"></div>
-              <br>
-              <h2>Hard-Skills:</h2>
-              <br>
-              <img alt="Vini-Laravel" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
-              <img alt="Vini-Mysql" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-              <img alt="Vini-Git" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" />
-              <div class="dividir"></div>
-              <h2>Soft-Skills:</h2>
-              <p><b>- Proativo</b></p>
-              <p><b>- Boa comunicação</b></p>
-              <p><b>- Trabalho em equipe</b></p>
-              <p><b>- Rapida apredizagem</b></p>
-              <br>
-              <h2>Idiomas:</h2>
-              <p><b>Português: Nativo</b></p>
-              <p><b>inglês: Intermediario</b></p>
-              <p><b>Curso de Inglês: 01/2024 - 05/2024</b></p>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="project-card" tabindex="0">
+            <img
+              src="https://private-user-images.githubusercontent.com/115045547/282319788-d757d108-5322-4280-849d-1db98eb13ca7.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjUzMDgyODEsIm5iZiI6MTc2NTMwNzk4MSwicGF0aCI6Ii8xMTUwNDU1NDcvMjgyMzE5Nzg4LWQ3NTdkMTA4LTUzMjItNDI4MC04NDlkLTFkYjk4ZWIxM2NhNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIwOVQxOTE5NDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYjI2YzAzNjk5ZjYwMDlkNWQyZGIwMThjMDNjMGUwN2E0Mzg2YjNjMTU0NDdjMzFkY2RlY2EzMjNjMmY3NWIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.5dw5Wgg5FjdJnmRT4-1yNqxK3rRj9dSNmhUT3_-hOpg"
+              alt="Projeto 2"
+            />
+            <div class="project-body">
+              <h3>Aluguel de casas (Laravel)</h3>
+              <p>
+                Fiz esse projeto a um tempo atrás, apenas front-end, mas decidi
+                integrar o back-end. O projeto foi feito utilizando Laravel,
+                Blade e Tailwind. No projeto você pode criar o seu usuario,
+                cadastrar sua casa e ver também quais casas você cadastrou no
+                seu usuario...
+              </p>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ViniciusVianaS/devHouse-fullstack"
+                  class="link"
+                  >Ver repositório</a
+                >
+              </div>
             </div>
-          </div>
+          </article>
+
+          <!-- Projeto 3 -->
+          <article class="project-card" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1523475496153-3d6cc9ab0af9?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+              alt="Projeto 3"
+            />
+            <div class="project-body">
+              <h3>Landing page petshop (Next.js)</h3>
+              <p>
+                Desenvolvida com Next, TypeScript e Tailwind CSS, esta landing
+                page foi feita para contato em um petshop, apresenta um design
+                moderno e responsivo.
+              </p>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ViniciusVianaS/lading-page"
+                  class="link"
+                  >Ver repositório</a
+                >
+              </div>
+            </div>
+          </article>
         </div>
       </section>
+
+      <section class="contact container" id="contato">
+        <h2>Contato</h2>
+        <p>Quer me chamar para uma vaga ou entrevista? Envie uma mensagem.</p>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-grid">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Seu nome"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Seu e‑mail"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Assunto"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Mensagem"
+              required
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Enviar mensagem</button>
+            <small class="form-note"
+              >Ou envie um e‑mail diretamente para
+              <a href="mailto:seu@email.com"
+                >viniciusviana054@gmail.com</a
+              ></small
+            >
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Vinícius Viana — Desenvolvedor</p>
+        <div class="socials">
+          <a href="https://github.com/ViniciusVianaS">GitHub</a>
+          <a href="https://www.linkedin.com/in/vinicius-viana10/">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
