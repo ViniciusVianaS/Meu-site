@@ -1,14 +1,11 @@
-/* -------------------------------------------------- */
-/* style.css */
-/* -------------------------------------------------- */
 :root {
-  --bg: #0f1724; /* deep navy */
+  --bg: #0f1724;
   --card: #0b1220;
   --muted: #9aa4b2;
   --glass: rgba(255, 255, 255, 0.03);
-  --blue-500: #1777ff; /* cor principal */
+  --blue-500: #1777ff;
   --blue-300: #6fb1ff;
-  --accent: #ff7a6b; /* coral */
+  --accent: #ff7a6b;
   --radius: 12px;
   --container: 1100px;
 }
@@ -34,7 +31,6 @@ body {
   padding: 2rem;
 }
 
-/* Header */
 .site-header {
   backdrop-filter: blur(6px);
   position: sticky;
@@ -98,7 +94,6 @@ body {
   border-radius: 2px;
 }
 
-/* Hero */
 .hero {
   padding: 4rem 0;
 }
@@ -163,7 +158,6 @@ body {
   border-radius: 8px;
 }
 
-/* Sections */
 section h2 {
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
@@ -187,7 +181,7 @@ section h2 {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: .75rem;
 }
 .skill-card {
   background: linear-gradient(
@@ -201,7 +195,6 @@ section h2 {
   font-weight: 600;
 }
 
-/* Projects */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -237,7 +230,6 @@ section h2 {
   font-weight: 600;
 }
 
-/* Contact */
 .contact-form {
   background: linear-gradient(
     180deg,
@@ -273,7 +265,6 @@ section h2 {
   color: var(--muted);
 }
 
-/* Footer */
 .site-footer {
   padding: 1.25rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.03);
@@ -290,7 +281,6 @@ section h2 {
   margin-left: 0.75rem;
 }
 
-/* Responsive */
 @media (max-width: 980px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -317,7 +307,6 @@ section h2 {
   }
 }
 
-/* small helpers */
 .btn-primary,
 .btn-ghost,
 .link {
